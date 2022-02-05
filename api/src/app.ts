@@ -1,10 +1,12 @@
 import { Application } from "@curveball/core";
+import cors from "@curveball/cors";
 import accessLog from "@curveball/accesslog";
 import problem from "@curveball/problem";
 import bodyParser from "@curveball/bodyparser";
 import routes from "./routes";
 
 const app = new Application();
+app.use(cors());
 
 // The accesslog middleware shows all requests and responses on the cli.
 app.use(accessLog());

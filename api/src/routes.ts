@@ -1,4 +1,7 @@
 import router from "@curveball/router";
-import homeController from "./home/controller";
+import HomeController from "./home/controller";
+import UsersController from "./users/controller";
 
-export default [router("/", homeController)];
+const routes = [router("/", HomeController), router("/users", UsersController)];
+
+export default routes;

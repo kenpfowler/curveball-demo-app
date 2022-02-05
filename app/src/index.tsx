@@ -8,7 +8,7 @@ import { KettingProvider } from "react-ketting";
 
 // Create a new client, and set the base uri for the API.
 // This URI will be used to resolve any relative uris.
-const client = new Client("https://jsonplaceholder.typicode.com/");
+const client = new Client("http://localhost:8500");
 
 ReactDOM.render(
   <KettingProvider client={client}>
