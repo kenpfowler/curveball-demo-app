@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Client } from "ketting";
 import { KettingProvider } from "react-ketting";
+import { BrowserRouter } from "react-router-dom";
 
 // Create a new client, and set the base uri for the API.
 // This URI will be used to resolve any relative uris.
@@ -13,7 +14,9 @@ const client = new Client("http://localhost:8500");
 ReactDOM.render(
   <KettingProvider client={client}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </KettingProvider>,
   document.getElementById("root")

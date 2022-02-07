@@ -1,23 +1,24 @@
 import "./App.css";
-import { useResource } from "react-ketting";
+import Navigation from "./components/navigation/navigation";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/homepage";
+import CreateCampaginPage from "./pages/create-campagin";
+import SignInAndSignUpPage from "./pages/signin-and-signup";
+import SettingsPage from "./pages/settings";
 
 function App() {
-  const { loading, error, data } = useResource<any>("/users");
-  if (loading) return <p>Loading...</p>;
-  if (error) return <div className="error">{error.message}</div>;
   return (
-    <article>
-      {data.map((user: any) => {
-        return (
-          <div key={user.id}>
-            <h1>{user.name}</h1>
-            <p>{user.group}</p>
-            <p>{user.permission}</p>
-          </div>
-        );
-      })}
-      <span style={{ backgroundColor: "green" }}>{data.id}</span>
-    </article>
+    <>
+      <Navigation />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/create-campagin" element={<CreateCampaginPage />} />
+          <Route path="/signin-and-signup" element={<SignInAndSignUpPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
