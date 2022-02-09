@@ -1,5 +1,10 @@
 import React from "react";
+import SignIn from "../components/sign-in/sign-in";
 
 export default function SignInAndSignUpPage() {
-  return <div>Hello from sign in and sign up!</div>;
+  return (
+    <div>
+      <SignIn />
+    </div>
+  );
 }
