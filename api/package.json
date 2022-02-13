@@ -1,7 +1,7 @@
 {
-  "name": "@curveball/starter",
+  "name": "fundfreely",
   "version": "0.0.1",
-  "description": "Minimal curveball starter template",
+  "description": "Platform for organizing charitable donations that can't be interupted",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "tsc",
@@ -30,12 +30,12 @@
   },
   "homepage": "https://github.com/curveball/starter#readme",
   "devDependencies": {
-    "@types/node": "^14.14.10",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
-    "eslint": "^8.3.0",
-    "tsc-watch": "^4.2.9",
-    "typescript": "^4.1.2"
+    "@types/node": "^14.18.10",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.8.0",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.5"
   },
   "types": "dist/",
   "nyc": {
@@ -46,10 +46,12 @@
   "dependencies": {
     "@curveball/accesslog": "^0.2.0",
     "@curveball/bodyparser": "^0.4.6",
+    "@curveball/browser": "^0.16.5",
     "@curveball/controller": "^0.3.0",
-    "@curveball/core": "^0.16.3",
+    "@curveball/core": "^0.16.4",
     "@curveball/cors": "^0.1.5",
-    "@curveball/problem": "^0.3.0",
+    "@curveball/http-errors": "^0.4.1",
+    "@curveball/problem": "^0.3.1",
     "@curveball/router": "^0.3.0"
   }
 }

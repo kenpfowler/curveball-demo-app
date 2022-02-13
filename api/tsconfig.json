@@ -2,12 +2,11 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2019",
-
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
     "noUnusedLocals": true,
-
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
