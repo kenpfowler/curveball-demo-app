@@ -1,34 +1,39 @@
-const data = [
-  {
+import {User} from "../types";
+ 
+export const data: User[] = [
+   {
     id: 1,
-    name: "Ryu",
-    permission: "admin",
-    group: "development",
+    nickName: "Ryu",
+    email: "ryu@streetfighter.com",
+    password: "password",
+    campaigns: []
   },
   {
     id: 2,
-    name: "Chun-Li",
-    permission: "admin",
-    group: "development",
+    nickName: "Ken",
+    email: "ken@streetfighter.com",
+    password: "password",
+    campaigns: []
   },
   {
     id: 3,
-    name: "Ken",
-    permission: "admin",
-    group: "development",
+    nickName: "Chun-li",
+    email: "chunli@streetfighter.com",
+    password: "password",
+    campaigns: []
   },
   {
     id: 4,
-    name: "Blanka",
-    permission: "admin",
-    group: "development",
+    nickName: "Blanka",
+    email: "Blanka@streetfighter.com",
+    password: "password",
+    campaigns: []
   },
   {
     id: 5,
-    name: "Balrog",
-    permission: "admin",
-    group: "development",
+    nickName: "M. Bision",
+    email: "mbison@streetfighter.com",
+    password: "password",
+    campaigns: []
   },
 ];
-
-export default data;
