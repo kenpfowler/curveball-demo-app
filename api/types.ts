@@ -1,35 +1,22 @@
 export type User = {
-    id: number
- nickName: string
- email: string
- password: string
- campaigns?: Campagin[]
+    id: number;
+ nickName: string;
+ email: string;
+ password: string;
+ campaigns?: Campagin[];
 }
 
 export type Campagin = {
-    id: number
-organizers: User[]
-name: string
-description: string
-amountDonated: number
-donationGoal: number
-numberOfDonators: number
-// as yyyy-mm-dd
-dateCreated: string
-category: Category[]
+title: string;
+category: Category[];
+description: string;
+bannerImage: string;
+goalAmount: number;
+updates: string;
+shareLink: string;
+owner: User;
 }
 
 export type Category = {
-
+type: string;
 }
-/*
-campagin:
-user:
-name:
-description:
-amountDonated:
-donationGoal:
-numberOfDonators:
-dateCreated:
-category:
-*/
