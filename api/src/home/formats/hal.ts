@@ -8,6 +8,10 @@ export const home = () => {
             'user-collection': {
                 href: "/users",
                 title: "Users"
+            },
+            'campagin-collection': {
+                href: "/campagins",
+                title: "Campagins"
             }
         }
     }
